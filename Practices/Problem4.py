@@ -19,13 +19,16 @@ def answer(answers):
 # Output: list of string ("One pair, two pair, three cards, ..")
 # Before use list, initialize list
 # from
+
 class Problem4(object):
+    # class variable
     def __init__(self):
-        pass
+        # read config
+        print("da tao instance")
 # to: nothing
-    # public
     # Split into blocks
-    def input_new_numbers():
+
+    def input_new_numbers(self):
         inputs = []
         count = 1
         print("Number of input:")
@@ -49,14 +52,19 @@ class Problem4(object):
 
     def processing(self):
         pass
-    def output(self):
+
+    def output(self, inputs):
+        # self.processing()
         pass
 
 # Entry point
 # def main():
 if __name__ ==  "__main__":
-    count = input_new_numbers()
-    print(count)
+    # Create instances => __init__
+    problem = Problem4()
+    inputs = problem.input_new_numbers()
+    # preprocessed_input = problem.processing(inputs)
+    # outputs = problem.output(preprocessed_inputs)
 
     # Processing
 
