@@ -1,9 +1,9 @@
 N=int(input("Numbers:"))
 n=1
-
+answers = []
 def cards(a, b, c, d):
     if a == b == c == d:
-        print("Four Cards")
+        answers.append("Four Cards")
     elif a == b == c or b == c == d or a == c == d:
         print("Three Cards")
     elif a == b and c == d:
@@ -12,6 +12,9 @@ def cards(a, b, c, d):
         print("One Pair")
     else:
         print("No Pair")
+
+def answer(answers):
+    pass
 
 while n<=N:
     raw = int(input())
