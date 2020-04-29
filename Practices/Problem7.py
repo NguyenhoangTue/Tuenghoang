@@ -1,5 +1,5 @@
 #Input:
-#Paiza RankC C035 
+#Paiza RankC C075 
 list_so_tien_1_lan = []
 for x in range(1):
     so_tien_ban_dau_va_so_lan_di_xe = input().rstrip().split(' ')
